@@ -2,9 +2,15 @@
 <html>
 <head>
 	<title>Basics 4 form</title>
+	<style type="text/css">
+		.error
+		{
+			border: 1px solid red;
+		}
+	</style>
 </head>
 <body>
-	<form name="contact" onsubmit="return validate()">
+	<form name="contact" onsubmit="return validate()" action="contact.php" method="get">
 		<input type="text" placeholder="Name" name="name">
 		<input type="text" placeholder="Phone" name="phone">
 		<input type="submit">
@@ -12,21 +18,26 @@
 
 	<script type="text/javascript">
 		
+		// Returns true or false
 		function validate()
 		{
 			var name = document.forms["contact"]["name"].value;
 			var phone = document.forms["contact"]["phone"].value;
-			
+			var valid = true; 
+
 			if (name === '' || name === null)
 			{
 				alert('name cannot be empty');
-				return false;
+				// document.forms["contact"]["name"].className = 'error';
+				valid = false;
 			}
 			if (phone === '' || phone === null )
 			{
 				alert('Phone cannot be empty');
-				return false;
+				valid = false;
 			}
+
+			return false;
 		}
 
 	</script>

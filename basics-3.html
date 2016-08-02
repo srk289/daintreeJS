@@ -20,47 +20,49 @@
 	}
 
 
-	// Switch example
 
-	// var grade='A';
-	// document.write("Entering switch block<br />");
-	// switch (grade)
-	// {
-	//  case 'A': document.write("Good job<br />");
-	//  break;
-	//  case 'B': document.write("Pretty good<br />");
-	//  break;
-	//  case 'C': document.write("Passed<br />");
-	//  break;
-	//  case 'D': document.write("Not so good<br />");
-	//  break;
-	//  case 'F': document.write("Failed<br />");
-	//  break;
-	//  default: document.write("Unknown grade<br />")
-	// }
-	// document.write("Exiting switch block");
-
-
-	// While example
-
-	// var count = 0;
-	// document.write("Starting Loop ");
-	// while (count < 10){
-	//  document.write("Current Count : " + count + "<br />");
-	//  count++;
-	// }
-	// document.write("Loop stopped!");
-
-	// 'For' Example
-
-	// var count;
-	// document.write("Starting Loop" + "<br />");
-	// for(count = 0; count < 10; count++){
-	//  document.write("Current Count : " + count );
-	//  document.write("<br />");
-	// }
-
-
+	// alert('Hello World');
+	
+	var firstName = 'Steve';
+	var lastName = 'Doe';
+	
+	// alert('Hi, my name is '+firstName);
+	// alert(firstName +' '+lastName);
+	
+	if(firstName == 'John'){
+		//alert('Yes I am John');
+	} else if(firstName == 'Steve'){
+		//alert('Yes I am Steve');
+	} else {
+		//alert('No, I am not John or Steve');
+	}
+	
+	// Array
+	var cars = new Array();
+	//cars[0] = 'Toyota';
+	//cars[1] = 'Honda';
+	//cars[2] = 'Ford';
+	
+	cars = ['Toyota','Honda','Ford'];
+	//alert(cars[1]);
+	
+	// For loop iwth console
+	for(var i = 0;i < cars.length; i++){
+		//console.log(cars[i]);
+	}
+	
+	// Funtion
+	function sayIt(word){
+		//alert(word);
+	}
+	
+	// sayIt('Hello World');
+	
+	function addIt(num1,num2){
+		alert(num1 + num2);
+	}
+	
+	// addIt(3,5);
 
 </script>
 </body>
