@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   	<link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="row">
+		<div class="col s12">
+			<!-- Todo list -->
+			<div class="section"> 
+				<h5>Todo list </h5>
+				<div id="todo">
+					<!-- <ul class="collection">
+						<li class="collection-item">
+							<input type="checkbox" class="filled-in" id="todo-1" />
+					      	<label for="todo-1">Read chapter 1 for bookclub</label>
+					      	<a href="#"><i class="material-icons">delete</i></a>
+						</li>
+						<li class="collection-item">
+							<input type="checkbox" class="filled-in" id="todo-2" />
+					      	<label for="todo-2">Push todo project into github</label>
+					      	<a href="#"><i class="material-icons">delete</i></a>
+						</li>
+						<li class="collection-item">
+							<input type="checkbox" class="filled-in" id="todo-3" />
+					      	<label for="todo-3">Dont forget to drink 3L water</label>
+					      	<a href="#"><i class="material-icons">delete</i></a>
+						</li>
+					</ul> -->
+				</div>
+			</div>
+
+			<!-- Completed list -->
+			<div class="section">
+				<h5>Completed list</h5>
+				<div id="completed">
+					
+				</div>
+			</div>
+
+			<!-- Fixed add new todo item -->
+			<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+			    <a href="#modal1" class="modal-trigger btn-floating btn-large red">
+			      <i class="large material-icons">add</i>
+			    </a>
+		  	</div>
+
+		  	<!-- Modal Structure -->
+		  	<div id="modal1" class="modal">
+		  		<div class="modal-content">
+		  			<div class="input-field col s12">
+		  		  		<input name="new" type="text" class="validate">
+		  				<label for="new">Add new todo item</label>
+		  			</div>
+		  		</div>
+		  		<div class="modal-footer">
+		  		  <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Add</a>
+		  		</div>
+		  	</div>
+		</div>
+	</div>
+
+	<!-- JS -->
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="bower_components/materialize/dist/js/materialize.min.js"></script>
+
+	<script type="text/javascript" src="js/model.js"></script>
+	<script type="text/javascript" src="js/view.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
